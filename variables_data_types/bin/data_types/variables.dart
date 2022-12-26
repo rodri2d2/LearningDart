@@ -85,6 +85,4 @@ void main(List<String> args) {
   // Listerally a type with no type
   var dynamicType = null;
   dynamic someStrongDynamic = null;
-
-  // Symbol
 }
