@@ -3,6 +3,15 @@ void main(List<String> args) {
   final names = {'Rodri', 'Maria', 'Jose', 'Rodri'};
   print(names); // {Rodri, Maria, Jose}
 
+  // ATTENTION!!!
+  // THIS
+  var names2 = {};
+  // Creates a MAP not a set
+  // Set or map? The syntax for map literals is similar to that for set literals.
+  //Because map literals came first, {} defaults to the Map type.
+  //If you forget the type annotation on {} or the variable it’s assigned to,
+  //then Dart creates an object of type Map<dynamic, dynamic>.
+
   // The code below creates a set which contain an array of names
   final uniqueNames = {names};
   print(uniqueNames); // {{Rodri, Maria, Jose}}
