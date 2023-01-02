@@ -20,4 +20,8 @@ void main(List<String> args) {
   // The spread operator must be used
   final uniqueNameSpread = {...names};
   print(uniqueNameSpread); // {Rodri, Maria, Jose}
+
+  final anotherNames = ['Rodri', 'Foo', 'Bar'];
+  final anotheUniqueWithSpread = {...names}..addAll(anotherNames);
+  print(anotheUniqueWithSpread); //{Rodri, Maria, Jose, Foo, Bar}
 }
