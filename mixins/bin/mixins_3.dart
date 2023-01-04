@@ -1,4 +1,7 @@
-void main(List<String> args) {}
+void main(List<String> args) {
+  final person = Human();
+  person.run();
+}
 
 class Has2Feet {}
 
@@ -11,3 +14,6 @@ mixin CanRun on Has2Feet {
     print('$runtimeType is running...');
   }
 }
+
+// Now a instance of this class will have acess to run method
+class Human extends Has2Feet with CanRun {}
