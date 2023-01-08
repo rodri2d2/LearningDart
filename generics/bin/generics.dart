@@ -35,3 +35,7 @@ T intOrDoubleWithT<T extends num>() {
 
 // Same funtion as above
 bool doMatchType<L, R>(L a, R b) => L == R;
+
+// OUT OF SCOPE
+// Type definition is like ALIAS for another type of value
+typedef SomeNumbers = Map<String, num>;
