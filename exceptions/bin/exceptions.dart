@@ -42,6 +42,8 @@ class Person {
       throw InvalidAgeExeption(age, 'Age must be less than 140');
     }
   }
+
+  void run() => throw UnimplementedError();
 }
 
 // Custom exeptions classes
